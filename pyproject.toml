@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "discord-piazza-feed"
+version = "0.1.0"
+description = ""
+authors = ["Skynet0 <ethan.ordentlich2017@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+piazza-api = "^0.12.0"
+python-dotenv = "^0.19.1"
+novus = "^0.0.3"
+websocket-client = "^1.2.1"
+websockets = "^10.0"
+markdownify = "^0.9.4"
+pydantic = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
