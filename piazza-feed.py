@@ -19,7 +19,7 @@ PIAZZA_NID = os.getenv("PIAZZA_CLASS")
 PIAZZA_WS = "wss://push.piazza.com/push/sub/ws"
 
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
-CHANNEL_ID = os.getenv("FIREHOSE_CHANNEL")
+CHANNEL_ID = int(os.getenv("FIREHOSE_CHANNEL"))
 
 p: PiazzaRPC = PiazzaRPC(PIAZZA_NID)
 ws_connected: bool = False
